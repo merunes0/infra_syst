@@ -162,7 +162,7 @@ services:
       GRAFANA_LOKI_URL: http://loki:3100/loki/api/v1/push
     command:
       - run
-      - --server.http.listen-addr=0.0.0.0:9000
+      - --server.http.listen-addr=0.0.0.0:9080
       - --storage.path=/var/lib/alloy/data
       - /etc/alloy/config.alloy
 
