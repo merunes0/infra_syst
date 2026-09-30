@@ -79,7 +79,7 @@ services:
       KC_METRICS_ENABLED: "true"
       KC_HEALTH_ENABLED: "true"
     volumes:
-      - ./infrastructure/keycloak/realm-config.json:/opt/keycloak.data/import/realm-config.json
+      - ./infrastructure/keycloak/realm-config.json:/opt/keycloak/data/import/realm-config.json
     depends_on:
       keycloak-postgres:
         condition: service_healthy
